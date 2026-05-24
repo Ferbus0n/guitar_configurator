@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Una primera versión interactiva para elegir acabado, color, mástil y hardware antes de solicitar presupuesto. El modelo está preparado en GLTF por piezas para sustituirlo después por guitarras reales." />
+    <link rel="canonical" href="/es/configurador/" />
+    <link rel="alternate" hreflang="es" href="/es/configurador/" />
+    <link rel="alternate" hreflang="ca" href="/ca/configurador/" />
+    <link rel="alternate" hreflang="en" href="/en/configurator/" />
+    <title>Diseña tu guitarra custom en tiempo real. | Ramos Custom Guitars</title>
+    <link rel="icon" href="/assets/logo-ramos.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    
+    <link rel="stylesheet" href="/configurador.css" />
+  </head>
+  <body data-page="configurator">
+    <canvas class="ambient-3d" data-ambient-3d aria-hidden="true"></canvas>
+    <header class="site-header" data-header>
+      <a class="brand" href="/es/" aria-label="Ramos Custom Guitars">
+        <img src="/assets/logo-ramos.svg" alt="Ramos Custom Guitars" />
+        <span>Ramos<br />Guitars</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation" data-nav><a href="/es/" >Inicio</a><a href="/es/models/" >Modelos</a><a href="/es/configurador/" aria-current="page">Configurador</a><a href="/es/guitarras-y-bajos-custom/" >Custom</a><a href="/es/luthier-servicio-de-reparacion/" >Servicios</a><a href="/es/como-hacer-una-guitarra/" >Curso</a><a href="/es/3d-guitar-hardware/" >3D</a><a href="/es/luthier-instrumento-artesanal-barcelona/" >Luthier</a><a href="/es/blog/" >Blog</a></nav>
+      <div class="header-actions">
+        <label class="language-select" aria-label="Language">
+          <select data-lang-switch><option value="/es/configurador/" selected>ES</option><option value="/ca/configurador/" >CA</option><option value="/en/configurator/" >EN</option></select>
+        </label>
+        <a class="header-cta" href="/es/contacto/">Contactar</a>
+      </div>
+    </header>
+    <main><section class="section-shell configurator-page">
+    <div class="configurator-intro reveal">
+      <p class="eyebrow">Configurador 3D</p>
+      <h1>Diseña tu guitarra custom en tiempo real.</h1>
+      <p>Una primera versión interactiva para elegir acabado, color, mástil y hardware antes de solicitar presupuesto. El modelo está preparado en GLTF por piezas para sustituirlo después por guitarras reales.</p>
+    </div>
+
+    <div class="configurator-workbench" data-guitar-configurator data-lang="es" data-contact-path="/es/contacto/" data-copy="{&quot;loaded&quot;:&quot;GLTF modular cargado&quot;,&quot;fallback&quot;:&quot;Modelo simplificado activo&quot;,&quot;saved&quot;:&quot;Configuración guardada para presupuesto&quot;,&quot;summary&quot;:{&quot;finish&quot;:&quot;Acabado del cuerpo&quot;,&quot;bodyColor&quot;:&quot;Color personalizado del cuerpo&quot;,&quot;neckColor&quot;:&quot;Color del mástil&quot;,&quot;bridge&quot;:&quot;Puente&quot;,&quot;pickups&quot;:&quot;Pastillas&quot;,&quot;tuners&quot;:&quot;Clavijero&quot;,&quot;hardwareColor&quot;:&quot;Color hardware&quot;},&quot;values&quot;:{&quot;natural&quot;:&quot;Natural&quot;,&quot;black&quot;:&quot;Negro&quot;,&quot;red&quot;:&quot;Rojo&quot;,&quot;sunburst&quot;:&quot;Sunburst&quot;,&quot;custom&quot;:&quot;Custom&quot;,&quot;hardtail&quot;:&quot;Hardtail&quot;,&quot;tremolo&quot;:&quot;Trémolo&quot;,&quot;humbucker&quot;:&quot;Humbucker&quot;,&quot;single&quot;:&quot;Single coil&quot;,&quot;active&quot;:&quot;Activas&quot;,&quot;modern&quot;:&quot;Moderno&quot;,&quot;locking&quot;:&quot;Locking&quot;,&quot;vintage&quot;:&quot;Vintage&quot;,&quot;chrome&quot;:&quot;Chrome&quot;,&quot;gold&quot;:&quot;Dorado&quot;}}">
+      <section class="configurator-canvas-panel reveal" aria-label="Vista 3D del configurador Ramos">
+        <canvas class="configurator-canvas" data-guitar-canvas></canvas>
+        <div class="viewer-toolbar">
+          <button type="button" data-reset-view>Centrar vista</button>
+          <span data-model-status>Cargando GLTF</span>
+        </div>
+      </section>
+
+      <aside class="configurator-panel reveal">
+        <h2>Opciones</h2>
+        <fieldset class="option-group">
+          <legend>Acabado del cuerpo</legend>
+          <div class="swatch-row">
+            <button class="swatch-button" type="button" data-config-key="finish" data-config-value="natural" aria-label="Natural"><span class="swatch-dot" style="background:linear-gradient(135deg, #d49a52, #6b3516)"></span></button><button class="swatch-button" type="button" data-config-key="finish" data-config-value="black" aria-label="Negro"><span class="swatch-dot" style="background:#050505"></span></button><button class="swatch-button" type="button" data-config-key="finish" data-config-value="red" aria-label="Rojo"><span class="swatch-dot" style="background:#8f1713"></span></button><button class="swatch-button" type="button" data-config-key="finish" data-config-value="sunburst" aria-label="Sunburst"><span class="swatch-dot" style="background:radial-gradient(circle, #f0b45c 0%, #9d2a1c 48%, #070403 100%)"></span></button><button class="swatch-button" type="button" data-config-key="finish" data-config-value="custom" aria-label="Custom"><span class="swatch-dot" style="background:linear-gradient(135deg, #c8a45d, #262626)"></span></button>
+          </div>
+          <label class="configurator-field"><span class="configurator-label">Color personalizado del cuerpo</span><input type="color" value="#7b1914" data-config-key="bodyColor" /></label>
+        </fieldset>
+
+        <fieldset class="option-group">
+          <legend>Color del mástil</legend>
+          <div class="swatch-row">
+            <button class="swatch-button" type="button" data-config-key="neckColor" data-config-value="#b77a3d" aria-label="Color del mástil"><span class="swatch-dot" style="background:linear-gradient(135deg, #d6a66a, #7a431d)"></span></button><button class="swatch-button" type="button" data-config-key="neckColor" data-config-value="#d0ae75" aria-label="Color del mástil"><span class="swatch-dot" style="background:linear-gradient(135deg, #f0d59b, #a16a2e)"></span></button><button class="swatch-button" type="button" data-config-key="neckColor" data-config-value="#5b3520" aria-label="Color del mástil"><span class="swatch-dot" style="background:linear-gradient(135deg, #8b5830, #28140b)"></span></button>
+          </div>
+          <label class="configurator-field"><span class="configurator-label">Color del mástil</span><input type="color" value="#b77a3d" data-config-key="neckColor" /></label>
+        </fieldset>
+
+        <fieldset class="option-group">
+          <legend>Hardware</legend>
+          <div class="select-grid">
+            <label class="configurator-field"><span class="configurator-label">Puente</span><select data-config-key="bridge"><option value="hardtail">Hardtail</option><option value="tremolo">Trémolo</option></select></label>
+            <label class="configurator-field"><span class="configurator-label">Pastillas</span><select data-config-key="pickups"><option value="humbucker">Humbucker</option><option value="single">Single coil</option><option value="active">Activas</option></select></label>
+            <label class="configurator-field"><span class="configurator-label">Clavijero</span><select data-config-key="tuners"><option value="modern">Moderno</option><option value="locking">Locking</option><option value="vintage">Vintage</option></select></label>
+            <label class="configurator-field"><span class="configurator-label">Color hardware</span><select data-config-key="hardwareColor"><option value="chrome">Chrome</option><option value="black">Negro</option><option value="gold">Dorado</option></select></label>
+          </div>
+        </fieldset>
+      </aside>
+
+      <aside class="configurator-summary reveal">
+        <h2>Resumen</h2>
+        <ul class="summary-list" data-config-summary></ul>
+        <p class="configurator-label">JSON de configuración</p>
+        <pre class="json-output" data-config-json></pre>
+        <a class="button button-primary" href="/es/contacto/?config=3d" data-request-quote>Solicitar presupuesto</a>
+        <p class="quote-status" role="status" data-quote-status></p>
+      </aside>
+    </div>
+  </section></main>
+    <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="/assets/logo-ramos.svg" alt="Ramos Custom Guitars" />
+        <p>Custom handmade instruments.</p>
+      </div>
+      <div>
+        <h3>Dirección</h3>
+        <p>c. Marquesos de Barberà, 47 Local 7<br />08210 Barberà del Vallès, Barcelona</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p><a href="tel:+34747477123">+34 747 477 123</a><br /><a href="mailto:info@ramosguitars.com">info@ramosguitars.com</a></p>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p>Lunes a viernes, 9:00 a 18:00</p>
+      </div>
+      <div>
+        <h3>Redes</h3>
+        <p class="social-links">
+          <a href="https://www.instagram.com/ramos_custom_guitars" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/ramosguitars" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/channel/UCCr4uHQDbmewQNTCx3eSZuQ" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://www.linkedin.com/in/ramos-guitars-02743221/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ramos Guitars. Guitarras custom, reparación y formación de luthería.</p>
+      <a href="/es/contacto/">Contactar</a>
+    </div>
+  </footer>
+    <a class="whatsapp-fab" href="https://wa.me/34747477123" aria-label="WhatsApp">WA</a>
+    <div class="lightbox" aria-hidden="true" data-lightbox>
+      <button type="button" aria-label="Close" data-lightbox-close>×</button>
+      <img alt="" data-lightbox-image />
+    </div>
+    <script type="module" src="/three-scene.js"></script>
+    
+    <script type="module" src="/configurador.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
