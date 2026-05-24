@@ -17,7 +17,7 @@ function initConfigurator(app) {
   const quoteButton = app.querySelector("[data-request-quote]");
   const resetButton = app.querySelector("[data-reset-view]");
   const copy = JSON.parse(app.dataset.copy || "{}");
-  const contactPath = app.dataset.contactPath || "/es/contacto/";
+  const contactPath = app.dataset.contactPath || "es/contacto/";
 
   const config = {
     version: "ramos-configurator-v1",
